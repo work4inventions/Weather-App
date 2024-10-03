@@ -1,0 +1,73 @@
+
+/* Base styles for the navbar */
+.navBar {
+  padding: 10px 0px;
+  color: var(--nav-text);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.search-container {
+  width: 30%;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.searchBar {
+  width: 100%;
+  max-width: 400px;
+  padding: 5px 10px;
+  background: var(--input-bg);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.53);
+  font-size: 14px;
+  color: var(--input-text);
+}
+
+.searchButton {
+  color: var(--button-text);
+  background-color: var(--button-bg);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.53);
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+}
+
+.searchButton:hover {
+  border: 1px solid var(--button-hover-border);
+}
+
+/* Dark theme styles */
+body.dark-theme {
+  --nav-bg: #222;
+  --nav-text: #fff;
+  --input-bg: #333;
+  --input-text: #fff;
+  --button-bg: #444;
+  --button-text: #fff;
+  --button-hover-border: rgba(250, 128, 114, 0.422);
+}
+
+/* Light theme styles */
+body.light-theme {
+  --nav-bg: #f9f9f9;
+  --nav-text: #000;
+  --input-bg: #fff;
+  --input-text: #000;
+  --button-bg: #e0e0e0;
+  --button-text: #000;
+  --button-hover-border: rgba(250, 128, 114, 0.422);
+}
