@@ -1,0 +1,54 @@
+.range-slider-container {
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+  }
+  
+  .slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .range-slider {
+    position: relative;
+    height: 20px;
+  }
+  
+  .range-slider-input {
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+  }
+  
+  .range-slider-input-min {
+    z-index: 2;
+  }
+  
+  .range-slider-input-max {
+    z-index: 1;
+  }
+  
+  .slider-track {
+    height: 4px;
+    position: relative;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 100px;
+    gap: 30px;
+
+  }
+  
+  .slider-range {
+    position: absolute;
+    height: 100%;
+    background: rgb(94, 45, 191);
+    border-radius: 4px;
+    width: 30px;
+    right: 30px;
+    
+  }
+
+  
+  

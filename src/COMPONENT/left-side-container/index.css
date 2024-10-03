@@ -1,0 +1,347 @@
+
+.left-side-container {
+    width: 25vw;
+    padding: 20px;
+  }
+  
+  .left-side-container .top-container {
+    padding: 20px;
+    background-color: rgba(33, 38, 42, 0.367);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.475);
+  }
+  
+  .left-side-container .top {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+  }
+  
+  .city-name {
+    margin-top: 20px;
+  }
+  
+  .bottom {
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+    
+  }
+  
+  .left-side-container .center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .temp {
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.658);
+  }
+
+
+.bottom-container {
+  margin-top: 1rem;
+  padding: 16px;
+  background-color: rgba(33, 38, 42, 0.367); /* Semi-transparent background */
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.475); /* Subtle shadow */
+}
+
+/* Heading style within the bottom container */
+.bottom-container .heading {
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 10px; /* Add some space below the heading */
+}
+
+/* Style for each forecast item */
+.bottomm-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px; /* Increase gap for better spacing */
+  margin-bottom: 14px; /* Add space below each item */
+  padding: 5px; /* Increase padding for better touch target */
+  width: 100%; /* Make width responsive */
+}
+
+/* General styles for text within each forecast item */
+.bottomm-con p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #fff; /* Set text color to white for better contrast */
+}
+
+/* Style for the temperature text */
+.bottomm-con p:last-child {
+  font-size: 12px;
+}
+
+
+
+
+  @media (max-width: 1200px) {
+    .left-side-container,
+    .center-side-container,
+    .right-side-container {
+      width: 33.33vw;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .left-side-container,
+    .center-side-container,
+    .right-side-container {
+      width: 100%;
+    }
+  
+    .container-dash {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .left-side-container,
+    .center-side-container,
+    .right-side-container {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .left-side-container .top-container,
+    .center-side-container .air-pollution,
+    .center-side-container .sunset,
+    .right-side-container .right-top .con-a {
+      padding: 15px;
+      box-shadow: 0px 0px 4px 0px rgba(128, 128, 128, 0.475);
+    }
+  
+    .temp {
+      font-size: 4rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .temp {
+      font-size: 3rem;
+    }
+  
+    .bottomm-con {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .bottomm-con p {
+      font-size: 1rem;
+    }
+  
+    .center-side-container .searchBar {
+      width: 100%;
+      font-size: 12px;
+    }
+  
+    .center-side-container .search-container {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .temp {
+      font-size: 2.5rem;
+    }
+  
+    .bottomm-con {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .bottomm-con p {
+      font-size: 0.875rem;
+    }
+  
+    .bottom-con {
+      flex-direction: column;
+    }
+  
+    .bottom-con .container-a,
+    .bottom-con .container-b,
+    .bottom-con .container-c {
+      width: 100%;
+      margin-top: 0;
+    }
+  
+    .center-side-container .searchBar {
+      width: 100%;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container-dash {
+      margin: 0px 10px;
+    }
+  
+    .left-side-container,
+    .center-side-container,
+    .right-side-container {
+      padding: 10px;
+    }
+  
+    .center-side-container .top-con {
+      flex-direction: column;
+    }
+  
+    .today-forecast {
+      font-size: 9px;
+    }
+  
+    .today-forecast span {
+      font-size: 14px;
+    }
+  
+    .right-Index {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .center-side-container .air-pollution,
+    .center-side-container .sunset,
+    .right-side-container .right-top .con-a {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .left-side-container,
+    .center-side-container,
+    .right-side-container {
+      width: 33.33vw;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .left-side-container,
+    .center-side-container,
+    .right-side-container {
+      width: 100%;
+    }
+  
+    .container-dash {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .left-side-container,
+    .center-side-container,
+    .right-side-container {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .left-side-container .top-container,
+    .center-side-container .air-pollution,
+    .center-side-container .sunset,
+    .right-side-container .right-top .con-a {
+      padding: 15px;
+      box-shadow: 0px 0px 4px 0px rgba(128, 128, 128, 0.475);
+    }
+  
+    .temp {
+      font-size: 4rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .temp {
+      font-size: 3rem;
+    }
+  
+    .bottomm-con {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .bottomm-con p {
+      font-size: 1rem;
+    }
+  
+    .center-side-container .searchBar {
+      width: 100%;
+      font-size: 12px;
+    }
+  
+    .center-side-container .search-container {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .temp {
+      font-size: 2.5rem;
+    }
+  
+    .bottomm-con {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .bottomm-con p {
+      font-size: 0.875rem;
+    }
+  
+    .bottom-con {
+      flex-direction: column;
+    }
+  
+    .bottom-con .container-a,
+    .bottom-con .container-b,
+    .bottom-con .container-c {
+      width: 100%;
+      margin-top: 0;
+    }
+  
+    .center-side-container .searchBar {
+      width: 100%;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container-dash {
+      margin: 0px 10px;
+    }
+  
+    .left-side-container,
+    .center-side-container,
+    .right-side-container {
+      padding: 10px;
+    }
+  
+    .center-side-container .top-con {
+      flex-direction: column;
+    }
+  
+    .today-forecast {
+      font-size: 9px;
+    }
+  
+    .today-forecast span {
+      font-size: 14px;
+    }
+  
+    .right-Index {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .center-side-container .air-pollution,
+    .center-side-container .sunset,
+    .right-side-container .right-top .con-a {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
